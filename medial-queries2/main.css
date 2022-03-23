@@ -1,3 +1,76 @@
 body {
-  background: papayawhip;
+    background: papayawhip;
+    margin: 0;
+    font-size: 3em;
+}
+
+* {
+    border: 1px solid black;
+}
+
+
+/* container for the whole page */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+
+
+/* container for the main section */
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 0;
+    width: 100%;
+    min-height: 60vh;
+}
+
+
+/* main content */
+
+section>div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 1%;
+}
+
+.b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1%;
+    min-height: 30vh;
+}
+
+
+/* header & footer */
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: .75%;
+}
+
+@media (min-device-width: 600px) {
+    .container2 {
+        width: 75%;
+        justify-content: start;
+    }
+    footer {
+        width: 10%;
+        flex-grow: 1;
+    }
 }
